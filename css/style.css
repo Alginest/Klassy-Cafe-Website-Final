@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+:root {
+  --primary-color: #fa574a;
+  --secondary-color: #ffffff;
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --dark-color: #333;
+  --menu-speed: 0.75s;
+  --klassy-style: "Parisienne", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+a {
+  color: #333;
+}
+li {
+  list-style: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 100px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .head-left {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+header .container .head-left img {
+  margin: 0 100px;
+}
+header .container .head-right {
+  width: 100%;
+  height: 100%;
+}
+header .container .head-right ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+header .container .head-right ul a {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+/*dropdown hova*/
+header .container .head-right .features {
+  position: relative;
+  margin-right: 10px;
+}
+header .container .head-right .features:hover .drop-down {
+  display: block;
+  z-index: 3;
+}
+/*dropdown*/
+header .container .head-right .features .drop-down {
+  position: absolute;
+  top: 20px;
+  display: none;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+header .container .head-right .features .drop-down ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+header .container .head-right .features .drop-down ul li {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-top: 1px solid white;
+}
+/*about-us*/
+.about-us {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.about-us .container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.about-us .container .about-text {
+  background-color: white;
+  width: 600px;
+  margin: 100px;
+  height: auto;
+}
+.about-us .container .about-text .para-uno {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 0;
+  color: var(--primary-color);
+}
+.about-us .container .about-text h1 {
+  font-size: 2rem;
+  margin: 30px 0;
+  letter-spacing: 1px;
+}
+.about-us .container .about-text .para-duo {
+  color: var(--dark-color);
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 30px 0;
+  font-family: "Roboto", sans-serif;
+}
+.about-us .container .about-text .para-trio {
+  color: var(--dark-color);
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 30px 0;
+}
+.about-us .container .about-text .about-trio {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .container .about-text .about-trio img {
+  margin: 10px;
+}
+.about-us .container .about-img {
+  margin-top: 100px;
+  margin-right: 100px;
+}
+/*text-sec*/
+.text-sec {
+  width: 100%;
+  height: auto;
+  background-color: rgb(250, 248, 248);
+}
+
+.text-sec .container .slider-es {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-sec .container .slider-es p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 0;
+  color: var(--primary-color);
+}
+.text-sec .container .slider-es h1 {
+  font-size: 2rem;
+  margin: 30px 0;
+  letter-spacing: 1px;
+}
+/*chefs*/
+.chefs {
+  width: 100%;
+  margin: 100px 0;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.chefs p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 0;
+  color: var(--primary-color);
+}
+.chefs h1 {
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.chefs .cooks {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 15%;
+}
+.chefs .cooks .cookers {
+  border: 2px solid rgb(197, 196, 196);
+  padding: 10px;
+  margin: 10px;
+}
+.chefs .cooks .cookers p {
+  color: var(--dark-color);
+}
+/*table reserv*/
+.table-res {
+  width: 100%;
+  height: auto;
+  background-image: url(/images/reservation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+}
+.table-res .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.table-res .container .contact {
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+}
+/*contact-head*/
+.table-res .container .contact .contact-head {
+  width: 100%;
+  height: auto;
+}
+.table-res .container .contact .contact-head .para-uno {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+.table-res .container .contact .contact-head h1 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.table-res .container .contact .contact-head .para-duo {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 50px 0;
+  font-weight: 500;
+}
+/*contact-info*/
+.table-res .container .contact .contact-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+/*important width change*/
+.table-res .container .contact .contact-info .contact-phone {
+  position: relative;
+  text-align: center;
+  background-color: var(--secondary-color);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 5px black;
+}
+.table-res .container .contact .contact-info .contact-phone i {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  padding: 30px;
+  background-color: var(--primary-color);
+  border-radius: 60px;
+  margin-top: 10px;
+}
+.table-res .container .contact .contact-info .contact-phone h2 {
+  margin: 5px;
+  font-size: 1.7rem;
+}
+/*nums*/
+.table-res .container .contact .contact-info .contact-phone .nums {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px;
+}
+.table-res .container .contact .contact-info .contact-phone .nums a {
+  margin: 5px 0;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+/*contact-form*/
+.table-res .container .contact-form {
+  width: 600px;
+  background-color: var(--secondary-color);
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 5px black;
+}
+.table-res .container .contact-form .container-sm {
+  width: 90%;
+  height: 90%;
+  margin: 30px auto;
+}
+.table-res .container .contact-form .container-sm h1 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.table-res .container .contact-form .container-sm .form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.table-res .container .contact-form .container-sm .form .form-left {
+  height: 250px;
+  width: 48%;
+}
+.table-res .container .contact-form .container-sm .form .form-left form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: inherit;
+}
+.table-res .container .contact-form .container-sm .form .form-left form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 214, 214);
+  outline: none;
+}
+.table-res
+  .container
+  .contact-form
+  .container-sm
+  .form
+  .form-left
+  form
+  input::placeholder {
+  font-size: 1rem;
+  color: rgb(105, 105, 105);
+  font-weight: 550;
+  padding-left: 20px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.table-res
+  .container
+  .contact-form
+  .container-sm
+  .form
+  .form-left
+  form
+  input:focus {
+  outline: none;
+}
+/*text-area*/
+.table-res .container .contact-form .container-sm .form-text {
+  width: 100%;
+}
+.table-res .container .contact-form .container-sm .form-text textarea {
+  width: 100%;
+  height: 180px;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 214, 214);
+}
+.table-res
+  .container
+  .contact-form
+  .container-sm
+  .form-text
+  textarea::placeholder {
+  font-size: 1rem;
+  color: rgb(105, 105, 105);
+  font-weight: 550;
+  padding: 20px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+/*btn*/
+.table-res .container .contact-form .container-sm button {
+  width: 100%;
+  padding: 15px;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+/*food specials*/
+.specials {
+  width: 100%;
+  height: auto;
+  padding: 100px 0px;
+}
+.specials .container {
+  height: auto;
+  width: 100%;
+}
+.specials .container p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  padding: 20px 0px;
+}
+.specials .container h1 {
+  font-weight: 900;
+  margin-bottom: 100px;
+}
+/*tabs*/
+.specials .container .tabs {
+  display: flex;
+  justify-content: center;
+}
+.specials .container .tabs .tab-timers {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  text-align: center;
+  width: 120px;
+}
+.specials .container .tabs .tab-timers img {
+  width: 100%;
+  height: auto;
+}
+.specials .container .tabs .tab-timers a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 900;
+  margin: 20px 0;
+}
+/*foods*/
+.specials .container .foods {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+}
+.specials .container .foods .foods-six {
+  display: flex;
+  width: 100%;
+  height: inherit;
+}
+.specials .container .foods .foods-six .foods-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  margin: 0 50px;
+}
+
+/*img smaller rows*/
+.specials .container .foods .foods-six .foods-two .foods-three {
+  width: 700px;
+  display: flex;
+}
+.specials .container .foods .foods-six .foods-two .foods-three .food-img {
+  height: inherit;
+  width: 200px;
+}
+.specials .container .foods .foods-six .foods-two .foods-three .food-img img {
+  width: 100%;
+  height: auto;
+}
+/*h2 and p foods*/
+.specials .container .foods .foods-six .foods-two .foods-three .food {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+.specials .container .foods .foods-six .foods-two .foods-three .food p {
+  font-size: 16px;
+  padding: 0;
+  color: var(--dark-color);
+  margin: 20px 0;
+}
+/*price*/
+.specials .container .foods .foods-six .foods-two .foods-three .price {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.specials .container .foods .foods-six .foods-two .foods-three .price a {
+  background-color: var(--primary-color);
+  padding: 25px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+/*footer*/
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer-info-uno {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+footer .footer-info {
+  color: var(--secondary-color);
+  margin: 20px;
+}
+footer .footer-info-uno i {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

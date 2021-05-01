@@ -1,0 +1,387 @@
+/*extraaaaa large devices*/
+@media (max-width: 1400px) {
+  /*about us*/
+  .about-us {
+    height: auto;
+  }
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  .about-us .container .about-img {
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .slider-e {
+    height: auto;
+  }
+  .chefs .cooks {
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 15%;
+  }
+  /*table reservation*/
+  .table-res {
+    height: auto;
+  }
+  .table-res .container {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .table-res .container .contact {
+    width: 800px;
+    margin: 50px 50px;
+  }
+  /*form*/
+  /*contact-form*/
+  .table-res .container .contact-form {
+    margin: 0 auto;
+  }
+  /*foods*/
+  .specials {
+    height: auto;
+  }
+  .specials .container .foods .foods-six {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .specials .container .foods .foods-six .foods-two {
+    margin: 50px 50px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+  /*Slider css and java inc*/
+  .opening {
+    height: 600px;
+  }
+  .about-us {
+    height: auto;
+  }
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  /*table*/
+  .table-res .container .contact {
+    width: 800px;
+    margin: 50px 50px;
+  }
+  .table-res .container .contact .contact-info .contact-phone {
+    max-width: 250px;
+    border-radius: 10px;
+    margin: 10px 5px;
+  }
+  .table-res .container .contact .contact-info {
+    flex-wrap: wrap;
+  }
+  /*form*/
+  /*contact-form*/
+  .table-res .container .contact-form {
+    margin: 0 auto;
+  }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+  /*header*/
+  header .container {
+    flex-wrap: wrap;
+  }
+  header .container .head-left {
+    display: flex;
+    justify-content: center;
+  }
+  header .container .head-right ul {
+    justify-content: center;
+  }
+  /*slider*/
+  .opening {
+    height: 500px;
+    margin-top: 100px;
+  }
+  .opening .slider-title .slider-text h1 {
+    font-size: 45px;
+  }
+  .opening .slider-title .slider-text p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .opening .slider-title .slider-text a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .about-us {
+    height: auto;
+  }
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  /*slider*/
+  .opening {
+    height: 500px;
+    margin-top: 100px;
+  }
+  .opening .slider-title {
+    width: 40%;
+  }
+  .opening .slider-title .slider-text h1 {
+    font-size: 35px !important;
+  }
+  .opening .slider-title .slider-text p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .opening .slider-title .slider-text a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  /*about-us*/
+  .about-us {
+    height: auto;
+  }
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  .about-us .container .about-text {
+    background-color: white;
+    width: 500px;
+    margin: 100px;
+    height: auto;
+  }
+
+  .about-us .container .about-text .about-trio img {
+    margin: 10px;
+    width: 150px;
+  }
+  .about-us .container .about-img img {
+    width: 500px;
+  }
+  /*table reservation*/
+  .table-res {
+    padding: 45px;
+  }
+  /*specials*/
+  .specials .container .foods .foods-six .foods-two .foods-three {
+    width: 500px;
+    display: flex;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small devices (landscape phones, 576px and down)*/
+@media (max-width: 576px) {
+  header .container .head-right ul li a {
+    font-weight: 600;
+    padding: 5px;
+    color: var(--dark-color);
+  }
+  header .container .head-left {
+    display: flex;
+    justify-content: center;
+  }
+  header .container .head-right ul {
+    justify-content: center;
+  }
+  /*openinign*/
+  .opening {
+    margin-top: 100px;
+    height: 400px;
+  }
+  .opening .slider-title {
+    width: 50%;
+  }
+  .opening .slider-title .slider-text h1 {
+    font-size: 35px;
+  }
+  .opening .slider-title .slider-text p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .opening .slider-title .slider-text a {
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  /*about-us*/
+  .about-us .container .about-text {
+    width: 400px;
+    margin-left: 120px;
+    height: auto;
+  }
+
+  .about-us .container .about-text .about-trio img {
+    margin-right: 5px;
+    width: 120px;
+  }
+  .about-us .container .about-img {
+    width: 400px;
+    margin-left: 120px;
+  }
+  .about-us .container .about-img img {
+    width: 400px;
+  }
+  .about-us {
+    height: auto;
+  }
+  .about-us .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  /*table reservation*/
+  .table-res {
+    padding: 0;
+  }
+  .table-res .container {
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100%;
+  }
+  .table-res
+    .container
+    .contact-form
+    .container-sm
+    .form
+    .form-left
+    form
+    input::placeholder {
+    font-size: 0.7rem;
+    color: rgb(105, 105, 105);
+    font-weight: 700;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  /*specials*/
+  .specials .container .foods .foods-six .foods-two .foods-three {
+    width: 400px;
+    display: flex;
+  }
+  .specials .container .foods .foods-six .foods-two {
+    justify-content: space-around;
+  }
+  /*mid-food*/
+  .specials .container .foods .foods-six .foods-two .foods-three .food {
+    padding: 0 10px;
+  }
+  .specials .container .foods .foods-six .foods-two .foods-three .food h2 {
+    font-size: 16px;
+  }
+  .specials .container .foods .foods-six .foods-two .foods-three .food p {
+    font-size: 13px;
+    padding: 0;
+    letter-spacing: 0px;
+  }
+  /*price*/
+  .specials .container .foods .foods-six .foods-two .foods-three .price {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 414px) {
+  header .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header .container .head-right ul {
+    justify-content: center;
+  }
+
+  header .container .head-right ul li a {
+    padding: 7px;
+    margin: 2px;
+  }
+  header .container .head-left img {
+    margin: 0 60px;
+  }
+  /*opening*/
+  .opening {
+    margin-top: 100px;
+    height: 300px;
+  }
+  /*about-us*/
+  .about-us .container .about-text {
+    width: 350px;
+    margin-left: 110px;
+    height: auto;
+  }
+
+  .about-us .container .about-text .about-trio img {
+    margin-right: 5px;
+    width: 100px;
+  }
+  .about-us .container .about-img {
+    width: 350px;
+    margin-left: 100px;
+  }
+  .about-us .container .about-img img {
+    width: 330px;
+  }
+  .about-us {
+    height: auto;
+  }
+  /*cooks*/
+  .chefs .cooks .cookers img {
+    width: 300px;
+    height: auto;
+  }
+  /*table reservation*/
+  .table-res .container {
+    flex-wrap: wrap;
+    width: 350px;
+    height: 100%;
+  }
+  .table-res
+    .container
+    .contact-form
+    .container-sm
+    .form
+    .form-left
+    form
+    input::placeholder {
+    font-size: 0.7rem;
+    color: rgb(105, 105, 105);
+    font-weight: 700;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  /*specials*/
+  .specials .container .foods .foods-six .foods-two .foods-three {
+    width: 350px;
+    display: flex;
+  }
+  .specials .container .foods .foods-six .foods-two {
+    justify-content: space-around;
+  }
+  /*mid-food*/
+  .specials .container .foods .foods-six .foods-two .foods-three .food {
+    padding: 0 5px;
+  }
+  .specials .container .foods .foods-six .foods-two .foods-three .food h2 {
+    font-size: 13px;
+  }
+  .specials .container .foods .foods-six .foods-two .foods-three .food p {
+    font-size: 13px;
+    padding: 0;
+    letter-spacing: 0px;
+  }
+  /*price*/
+  .specials .container .foods .foods-six .foods-two .foods-three .price {
+    padding: 0;
+  }
+  /*tabs*/
+  .specials .container .tabs .tab-timers {
+    margin: 0 20px;
+  }
+}
